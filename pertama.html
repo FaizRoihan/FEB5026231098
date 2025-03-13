@@ -1,0 +1,130 @@
+<!-- <html>
+  <head>
+    <style>
+.container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-scrollY {
+  overflow-y: scroll;
+}
+
+.long-text {
+  width: 100%;
+}
+
+</style>
+</head>
+<body>
+
+  <h1> Penerapan Overflow </h1>
+
+  <div class="container overflow-visible">
+    <p class="long-text">Surabaya, kota pahlawan di tepi Selat Madura, menyimpan kisah perjuangan, perdagangan, dan keberagaman. 
+      Semangat arek-arek Suroboyo terukir dalam Pertempuran 10 November 1945, diabadikan oleh Tugu Pahlawan. Kini, Surabaya metropolis yang dinamis, memadukan gedung pencakar langit dan bangunan bersejarah, menghubungkan Jawa dan Madura melalui Jembatan Suramadu, serta melestarikan budaya seperti Ludruk dan kuliner khasnya.     
+     </p>
+  </div>
+
+
+  <div class="container overflow-hidden">
+    <p class="long-text">Surabaya, kota pahlawan di tepi Selat Madura, menyimpan kisah perjuangan, perdagangan, dan keberagaman. 
+      Semangat arek-arek Suroboyo terukir dalam Pertempuran 10 November 1945, diabadikan oleh Tugu Pahlawan. Kini, Surabaya metropolis yang dinamis, memadukan gedung pencakar langit dan bangunan bersejarah, menghubungkan Jawa dan Madura melalui Jembatan Suramadu, serta melestarikan budaya seperti Ludruk dan kuliner khasnya.     
+     </p>
+  </div>>
+
+  <div class="container overflow-scroll">
+    <p class="long-text">Surabaya, kota pahlawan di tepi Selat Madura, menyimpan kisah perjuangan, perdagangan, dan keberagaman. 
+      Semangat arek-arek Suroboyo terukir dalam Pertempuran 10 November 1945, diabadikan oleh Tugu Pahlawan. Kini, Surabaya metropolis yang dinamis, memadukan gedung pencakar langit dan bangunan bersejarah, menghubungkan Jawa dan Madura melalui Jembatan Suramadu, serta melestarikan budaya seperti Ludruk dan kuliner khasnya.     
+     </p>
+  </div>
+
+  <div class="container overflow-auto">
+    <p class="long-text">Surabaya, kota pahlawan di tepi Selat Madura, menyimpan kisah perjuangan, perdagangan, dan keberagaman. 
+      Semangat arek-arek Suroboyo terukir dalam Pertempuran 10 November 1945, diabadikan oleh Tugu Pahlawan. Kini, Surabaya metropolis yang dinamis, memadukan gedung pencakar langit dan bangunan bersejarah, menghubungkan Jawa dan Madura melalui Jembatan Suramadu, serta melestarikan budaya seperti Ludruk dan kuliner khasnya.     
+     </p>
+  </div>
+
+  <div class="container overflow-scrollY">
+    <p class="long-text">Surabaya, kota pahlawan di tepi Selat Madura, menyimpan kisah perjuangan, perdagangan, dan keberagaman. 
+      Semangat arek-arek Suroboyo terukir dalam Pertempuran 10 November 1945, diabadikan oleh Tugu Pahlawan. Kini, Surabaya metropolis yang dinamis, memadukan gedung pencakar langit dan bangunan bersejarah, menghubungkan Jawa dan Madura melalui Jembatan Suramadu, serta melestarikan budaya seperti Ludruk dan kuliner khasnya.     
+     </p>
+  </div>
+
+
+</body>
+</html> -->
+
+<html>
+<head>
+<meta name="viewport"
+content="width=device-widht, initial-scale=1.0">
+<style>
+  .wrapper {overflow: auto;}
+
+  #main {margin-left: 4px;}
+
+  #leftsidebar {
+    float: none;
+    width: auto;
+  }
+
+  #menulist {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menuitem {
+    background: #cdf0f6 ;
+    border: 1px solid blue;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+  }
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+</style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div id="leftsidebar">
+      <ul id="menulist">
+        <li class="menuitem">Menu-barang 1</li>
+        <li class="menuitem">Menu-barang 2</li>
+        <li class="menuitem">Menu-barang 3</li>
+        <li class="menuitem">Menu-barang 4</li>
+        <li class="menuitem">Menu-barang 5</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="main">
+    <h1>Coba coba CSS Media Query</h1>
+    <p> Coba kecilkan layar ini dan liat apa ya yang terjadi????</p>
+    </div>
+  </div>
+
+</body>
+</html>
